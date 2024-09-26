@@ -1,0 +1,210 @@
+{
+    "info": {
+        "name": "API Routes Collection",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "photos GET /album/:id/photos",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/album/66f417110baad55da076f859/photos",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "album",
+                        "66f417110baad55da076f859",
+                        "photos"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "photos GET /album/:albumId/photo/:photoId",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/album/66f417110baad55da076f859/photo/66f4183b0baad55da076f85c",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "album",
+                        "66f417110baad55da076f859",
+                        "photo",
+                        "66f4183b0baad55da076f85c"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "photos POST /album/:id/photo",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/album/66f417110baad55da076f859/photo",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "album",
+                        "66f417110baad55da076f859",
+                        "photo"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"_id\": {\"$oid\": \"66f417110baad55da076f859\"}, \"title\": \"Lenny\", \"description\": \"Bonjour\", \"photos\": [{\"$oid\": \"66f4183b0baad55da076f85c\"}]}"
+                }
+            }
+        },
+        {
+            "name": "photos PUT /album/:albumId/photo/:photoId",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/album/66f417110baad55da076f859/photo/66f4183b0baad55da076f85c",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "album",
+                        "66f417110baad55da076f859",
+                        "photo",
+                        "66f4183b0baad55da076f85c"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"_id\": {\"$oid\": \"66f417110baad55da076f859\"}, \"title\": \"Lenny\", \"description\": \"Bonjour\", \"photos\": [{\"$oid\": \"66f4183b0baad55da076f85c\"}]}"
+                }
+            }
+        },
+        {
+            "name": "photos DELETE /album/:albumId/photo/:photoId",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/album/66f417110baad55da076f859/photo/66f4183b0baad55da076f85c",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "album",
+                        "66f417110baad55da076f859",
+                        "photo",
+                        "66f4183b0baad55da076f85c"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "albums GET /albums",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/albums",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "albums"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "albums GET /album/:id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/album/66f417110baad55da076f859",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "album",
+                        "66f417110baad55da076f859"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "albums POST /album",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/album",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "album"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"_id\": {\"$oid\": \"66f417110baad55da076f859\"}, \"title\": \"Lenny\", \"description\": \"Bonjour\", \"photos\": [{\"$oid\": \"66f4183b0baad55da076f85c\"}]}"
+                }
+            }
+        },
+        {
+            "name": "albums PUT /album/:id",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/album/66f417110baad55da076f859",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "album",
+                        "66f417110baad55da076f859"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"_id\": {\"$oid\": \"66f417110baad55da076f859\"}, \"title\": \"Lenny\", \"description\": \"Bonjour\", \"photos\": [{\"$oid\": \"66f4183b0baad55da076f85c\"}]}"
+                }
+            }
+        },
+        {
+            "name": "albums DELETE /album/:id",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/album/66f417110baad55da076f859",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "album",
+                        "66f417110baad55da076f859"
+                    ]
+                }
+            }
+        }
+    ]
+}
